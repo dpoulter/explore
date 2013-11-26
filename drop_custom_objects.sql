@@ -37,6 +37,13 @@ DECLARE
     WHERE r12_keep_yn='N' 
     and object_type='SEQUENCE';
     
+   CURSOR c_functions
+   IS   SELECT *
+     FROM xx_cust_objects at
+     WHERE r12_keep_yn='N' 
+     and object_type='FUNCTION';
+
+    
 BEGIN
   FOR rec IN c_tables
   LOOP
@@ -101,6 +108,17 @@ BEGIN
       EXCEPTION
       WHEN OTHERS THEN
         dbms_output.put_line('Error trying to drop sequence : '||rec.object_name|| ' '||sqlerrm);
+    END;
+  END LOOP;
+
+ FOR rec IN c_functions
+  LOOP
+    BEGIN
+      EXECUTE immediate 'drop function '||rec.schema||'.'||rec.object_name;
+      dbms_output.put_line('function : '||rec.schema||'.'||rec.object_name|| ' dropped');
+      EXCEPTION
+      WHEN OTHERS THEN
+        dbms_output.put_line('Error trying to drop function : '||rec.schema||'.'||rec.object_name|| ' '||sqlerrm);
     END;
   END LOOP;
 
