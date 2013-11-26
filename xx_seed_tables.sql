@@ -665,5 +665,5 @@ insert into xx_seed_tables values ('APPS','TEMP_1504980');
 insert into xx_seed_tables values ('APPS','TEMP_SR_CPT_UPGERR');
 insert into xx_seed_tables values ('APPS','TMP_TAB_PRIVS');
 insert into xx_seed_tables values ('APPS','AR_REM_CR_ID_GTT');
-
+insert into xx_seed_tables values ('APPS','AR_IL_CASH_RECEIPTS_GT');
 commit;
