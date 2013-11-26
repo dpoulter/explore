@@ -17,7 +17,8 @@ DECLARE
   and table_name not like 'IEX%'
   and table_name not like 'AQ$%'
   and table_name not like 'SYS%'
-  and table_name not like 'MLOG$%';
+  and table_name not like 'MLOG$%
+  and table_name not like 'IBY%;
 BEGIN
   FOR rec IN c_apps_tables
   LOOP
