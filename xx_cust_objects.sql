@@ -39,6 +39,11 @@ drop table "XX_CUST_OBJECTS" ;
   ALTER TABLE "XX_CUST_OBJECTS" ADD CONSTRAINT "XX_CUST_OBJECTS_PK" PRIMARY KEY ("ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
+--  DDL for Sequence  XX_CUST_OBJECTS_SEQ
+--------------------------------------------------------
+
+  CREATE SEQUENCE   "XX_CUST_OBJECTS_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 NOCACHE  NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL;
+--------------------------------------------------------
 --  DDL for Trigger bi_XX_CUST_OBJECTS
 --------------------------------------------------------
 
