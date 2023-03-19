@@ -36,8 +36,12 @@ drop table "XX_CUST_CONC_PROG" ;
   USING INDEX   ENABLE;
   ALTER TABLE "XX_CUST_CONC_PROG" MODIFY ("CUST_CONC_PROG_ID" NOT NULL ENABLE);
 --------------------------------------------------------
---  Ref Constraints for Table XX_CUST_CONC_PROG
+--  Sequence create sequence "XX_CUST_CONC_PROG_S1"
 --------------------------------------------------------
-
---  ALTER TABLE "XX_CUST_CONC_PROG" ADD CONSTRAINT "XX_CUST_CONC_PROG_XX_CUST_FK1" FOREIGN KEY ("CUST_ID")
---	  REFERENCES "XX_CUST_LIST" ("CUST_LIST_ID") ENABLE;
+create sequence "XX_CUST_CONC_PROG_S1"
+start with 1
+increment by 1
+nocache
+nocycle
+noorder
+/   
