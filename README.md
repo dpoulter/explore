@@ -14,3 +14,7 @@ xx_cust_list.sql
 -----------------
 Install database table script that holds the list of customisations 
 
+XX_CUST_LIST_S1.sql
+-------------------
+Install database sequence XX_CUST_LIST_S1 which generates the primary key column for XX_CUST_LIST
+
