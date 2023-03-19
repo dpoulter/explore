@@ -10,5 +10,7 @@ f101.sql
 ---------
 Apex application install script to import into Apex workspace.
 
-
+xx_cust_list.sql
+-----------------
+Install database table script that holds the list of customisations 
 
