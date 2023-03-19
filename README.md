@@ -18,3 +18,6 @@ XX_CUST_LIST_S1.sql
 -------------------
 Install database sequence XX_CUST_LIST_S1 which generates the primary key column for XX_CUST_LIST
 
+xx_cust_objects.sql
+--------------------
+Install database objects for the list of custom objects
