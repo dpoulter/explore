@@ -24,7 +24,7 @@
 --  DDL for Index XX_CUST_LIST_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "XX_CUST_LIST_PK" ON "APPS"."XX_CUST_LIST" ("CUST_LIST_ID") 
+  CREATE UNIQUE INDEX "XX_CUST_LIST_PK" ON "XX_CUST_LIST" ("CUST_LIST_ID") 
    ;
 --------------------------------------------------------
 --  Constraints for Table XX_CUST_LIST
