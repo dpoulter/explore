@@ -21,3 +21,7 @@ Install database sequence XX_CUST_LIST_S1 which generates the primary key column
 xx_cust_objects.sql
 --------------------
 Install database objects for the list of custom objects
+
+xx_cust_conc_prog.sql
+----------------------
+Install database objects for the list of concurrent programs
