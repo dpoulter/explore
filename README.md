@@ -6,7 +6,7 @@ xx_seed_tables.sql
 --------------------
 Install the database tables required for this Apex application by importing the sql using SQL Workshop Upload feature in an Apex workspace.
 
-f101.sql
+Explore Apex Customisation.sql
 ---------
 Apex application install script to import into Apex workspace.
 
